@@ -20,15 +20,15 @@
 ## Environment
 - Copy `.env.template` to `.env` before local development.
 - Required: `NEXT_PUBLIC_CROSSMINT_API_KEY`
-- Optional: `NEXT_PUBLIC_CHAIN` (defaults to `solana` in `/home/runner/work/wallets-quickstart/wallets-quickstart/app/providers.tsx`)
+- Optional: `NEXT_PUBLIC_CHAIN` (defaults to `solana` in `app/providers.tsx`)
 - Never commit real API keys or other secrets.
 
 ## Important files
-- `/home/runner/work/wallets-quickstart/wallets-quickstart/app/layout.tsx` wires global fonts, providers, and analytics.
-- `/home/runner/work/wallets-quickstart/wallets-quickstart/app/providers.tsx` sets up Crossmint providers and wallet creation behavior.
-- `/home/runner/work/wallets-quickstart/wallets-quickstart/app/page.tsx` switches between the landing page and authenticated dashboard.
-- `/home/runner/work/wallets-quickstart/wallets-quickstart/components/` contains the UI for dashboard, balances, activity, transfers, and auth actions.
-- `/home/runner/work/wallets-quickstart/wallets-quickstart/lib/utils.ts` contains shared utilities like the `cn` class name helper.
+- `app/layout.tsx` wires global fonts, providers, and analytics.
+- `app/providers.tsx` sets up Crossmint providers and wallet creation behavior.
+- `app/page.tsx` switches between the landing page and authenticated dashboard.
+- `components/` contains the UI for dashboard, balances, activity, transfers, and auth actions.
+- `lib/utils.ts` contains shared utilities like the `cn` class name helper.
 
 ## Conventions
 - Use the `@/` path alias for local imports.
